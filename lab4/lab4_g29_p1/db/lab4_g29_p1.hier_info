@@ -1,0 +1,30 @@
+|main
+S_tb => S_tb.IN1
+R_tb => R_tb.IN1
+D_tb => D_tb.IN2
+clk_tb => clk_tb.IN2
+pos_ff_out_tb <= lab4_g29_p1_pos_edge:pos_ff.Q
+neg_ff_out_tb <= lab4_g29_p1_neg_edge:neg_ff.Q
+latch_out_tb <= lab4_g29_p1_latch:latch.Q
+latch_outn_tb <= lab4_g29_p1_latch:latch.Qn
+
+
+|main|lab4_g29_p1_pos_edge:pos_ff
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|lab4_g29_p1_neg_edge:neg_ff
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|lab4_g29_p1_latch:latch
+S => Q_int.IN1
+R => Qn_int.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn_int.DB_MAX_OUTPUT_PORT_TYPE
+
+

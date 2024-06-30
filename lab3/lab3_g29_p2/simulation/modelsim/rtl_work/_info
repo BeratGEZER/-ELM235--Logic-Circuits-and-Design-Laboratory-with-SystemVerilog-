@@ -1,0 +1,193 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/quartus_lab/lab3/lab3_g29_p2/simulation/modelsim
+vall_gates_testbench
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1714610212
+!i10b 1
+!s100 NYnNEjGGnS5no58fE5^E:2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I0Mz[0<]21I@3CLj4dAVdD3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1714610156
+8D:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv
+FD:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv
+!i122 6
+L0 3 44
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1714610211.000000
+!s107 D:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab3/lab3_g29_p2|D:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2
+Z8 tCvgOpt 0
+vlab3_g29_p1
+R1
+Z9 !s110 1714610211
+!i10b 1
+!s100 Rcn3UklhDQ9HEZ[aC82=F2
+R2
+I8kNocFC2;ae8f?_@_RkUm2
+R3
+S1
+R0
+w1714571169
+8D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv
+FD:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv
+!i122 0
+L0 1 16
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab3/lab3_g29_p2|D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv|
+!i113 1
+R6
+R7
+R8
+vlab3_g29_p2_and_gate
+R1
+R9
+!i10b 1
+!s100 ?Neom7zEI]8J2]l1W4HG[1
+R2
+I_UGFnlYeK]?>FmD:h>B9V1
+R3
+S1
+R0
+w1714572477
+8D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv
+FD:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv
+!i122 1
+Z10 L0 1 14
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab3/lab3_g29_p2|D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv|
+!i113 1
+R6
+R7
+R8
+vlab3_g29_p2_nand_gate
+R1
+R9
+!i10b 1
+!s100 oLkcFCnU7H;S3gPMDfjDf0
+R2
+I;;7XDj2`WFXdT>I`Y_5[c2
+R3
+S1
+R0
+w1714573114
+8D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv
+FD:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv
+!i122 3
+R10
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab3/lab3_g29_p2|D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv|
+!i113 1
+R6
+R7
+R8
+vlab3_g29_p2_nor_gate
+R1
+R9
+!i10b 1
+!s100 gLFa1;`PKnT=8DRIG4CFm1
+R2
+I;`9koN4BXoMR^0VbWoG831
+R3
+S1
+R0
+w1714575423
+8D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv
+FD:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv
+!i122 4
+R10
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab3/lab3_g29_p2|D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv|
+!i113 1
+R6
+R7
+R8
+vlab3_g29_p2_or_gate
+R1
+R9
+!i10b 1
+!s100 Cb=z4WKfN<WWmIcOU9m;L2
+R2
+I76XXOZ:[36HJ9=Y`MXP0=2
+R3
+S1
+R0
+w1714572729
+8D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_or_gate.sv
+FD:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_or_gate.sv
+!i122 2
+R10
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_or_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab3/lab3_g29_p2|D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_or_gate.sv|
+!i113 1
+R6
+R7
+R8
+vmain
+R1
+R9
+!i10b 1
+!s100 @`f6zIOHI=RD>`eUj6<1o3
+R2
+IK3<AOn9ICl_FDG794<5Kg1
+R3
+S1
+R0
+w1714610195
+8D:/quartus_lab/lab3/lab3_g29_p2/main.sv
+FD:/quartus_lab/lab3/lab3_g29_p2/main.sv
+!i122 5
+L0 3 34
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/quartus_lab/lab3/lab3_g29_p2/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab3/lab3_g29_p2|D:/quartus_lab/lab3/lab3_g29_p2/main.sv|
+!i113 1
+R6
+R7
+R8

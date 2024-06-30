@@ -1,0 +1,23 @@
+`timescale 1ns/1ps 
+module tb_lab5_g30_p3(); 
+logic clk,reset,A; 
+logic Y; 
+lab5_g30_p3 dut0(.clk(clk),.reset(reset), .A(A), .Y(Y)); 
+initial begin 
+reset = 1 ; 
+ 
+A = 0; #15; A = 1; #10; 
+A = 0; #40; A = 1; #60; 
+A = 0; #20;    
+ 
+end 
+ 
+always begin 
+clk = 1; #5; clk = 0; #5; 
+end 
+ 
+initial begin 
+#1000; 
+$stop; 
+end 
+endmodule

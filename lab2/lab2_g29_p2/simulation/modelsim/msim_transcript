@@ -1,0 +1,58 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab2_g29_p2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab2/lab2_g29_p2 {D:/quartus_lab/lab2/lab2_g29_p2/lab2_g29_p2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:11:02 on Apr 25,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab2/lab2_g29_p2" D:/quartus_lab/lab2/lab2_g29_p2/lab2_g29_p2.sv 
+# -- Compiling module lab2_g29_p2
+# 
+# Top level modules:
+# 	lab2_g29_p2
+# End time: 15:11:02 on Apr 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab2/lab2_g29_p2 {D:/quartus_lab/lab2/lab2_g29_p2/tb_lab2_g29_p2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:11:02 on Apr 25,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab2/lab2_g29_p2" D:/quartus_lab/lab2/lab2_g29_p2/tb_lab2_g29_p2.sv 
+# -- Compiling module tb_lab2_g29_p2
+# 
+# Top level modules:
+# 	tb_lab2_g29_p2
+# End time: 15:11:02 on Apr 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_lab2_g29_p2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_lab2_g29_p2 
+# Start time: 15:11:02 on Apr 25,2024
+# Loading sv_std.std
+# Loading work.tb_lab2_g29_p2
+# Loading work.lab2_g29_p2
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: win10  Hostname: DESKTOP-V3DU3O8  ProcessID: 8420
+#           Attempting to use alternate WLF file "./wlftinyq60".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftinyq60
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/quartus_lab/lab2/lab2_g29_p2/tb_lab2_g29_p2.sv(31)
+#    Time: 160 ns  Iteration: 0  Instance: /tb_lab2_g29_p2
+# Break in Module tb_lab2_g29_p2 at D:/quartus_lab/lab2/lab2_g29_p2/tb_lab2_g29_p2.sv line 31
+# End time: 15:12:40 on Apr 25,2024, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 2

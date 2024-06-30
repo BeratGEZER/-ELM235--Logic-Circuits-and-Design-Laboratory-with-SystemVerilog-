@@ -1,0 +1,11 @@
+module lab4_g29_p1_latch (
+    input logic D,     // Veri girişi
+    input logic en,    // Enable sinyali
+    output logic Q     // Çıkış
+);
+    always @(*) begin
+        if (en) begin
+            Q = D;    // Enable sinyali yüksekse D'yi Q'ya ata
+        end
+    end
+endmodule

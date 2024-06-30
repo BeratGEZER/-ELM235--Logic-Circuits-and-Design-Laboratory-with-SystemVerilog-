@@ -1,0 +1,44 @@
+module tb_flipflops;
+    logic D;
+    logic clk;
+    logic pos_ff_out;
+    logic neg_ff_out;
+
+    // Yükselen kenar tetiklemeli D-FlipFlop örneği
+    pos_edge_d_flip_flop u_pos_ff (
+        .D(D),
+        .clk(clk),
+        .Q(pos_ff_out)
+    );
+
+    // Düşen kenar tetiklemeli D-FlipFlop örneği
+    neg_edge_d_flip_flop u_neg_ff (
+        .D(D),
+        .clk(clk),
+        .Q(neg_ff_out)
+    );
+
+    // Saat sinyali üretimi
+    always #5 clk = ~clk;
+
+    // Test vektörleri
+    initial begin
+        // Başlangıç değerleri
+        D = 0;
+        clk = 0;
+
+        // Test başlangıcı
+        $display("Starting Testbench");
+
+        // Test döngüsü
+        repeat (8) begin
+            #7 D = ~D;         // D sinyalini değiştir
+            #10;
+            $display("Time=%0t | D=%b, clk=%b | pos_ff_out=%b, neg_ff_out=%b", $time, D, clk, pos_ff_out, neg_ff_out);
+        end
+
+        // Test bitişi
+        $display("Testbench Completed");
+        $finish;
+    end
+endmodule

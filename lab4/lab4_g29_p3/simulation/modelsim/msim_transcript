@@ -1,0 +1,86 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab4_g29_p3_run_msim_gate_systemverilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {lab4_g29_p3.svo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:12:40 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+." lab4_g29_p3.svo 
+# -- Compiling module alu
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	alu
+# End time: 14:12:40 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p3 {D:/quartus_lab/lab4/lab4_g29_p3/tb_alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:12:40 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p3" D:/quartus_lab/lab4/lab4_g29_p3/tb_alu.sv 
+# -- Compiling module tb_alu
+# 
+# Top level modules:
+# 	tb_alu
+# End time: 14:12:40 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  tb_alu
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" tb_alu 
+# Start time: 14:12:40 on May 16,2024
+# Loading sv_std.std
+# Loading work.tb_alu
+# Loading work.alu
+# Loading work.hard_block
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb
+# Loading fiftyfivenm_ver.fiftyfivenm_io_obuf
+# Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf
+# Loading fiftyfivenm_ver.fiftyfivenm_unvm
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'a_aQUARTUS_CREATED_ADC1_a'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_alu/uut/a_aQUARTUS_CREATED_ADC1_a File: lab4_g29_p3.svo Line: 14768
+# ** Warning: (vsim-3722) lab4_g29_p3.svo(14768): [TFMPC] - Missing connection for port 'clk_dft'.
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: win10  Hostname: DESKTOP-V3DU3O8  ProcessID: 18964
+#           Attempting to use alternate WLF file "./wlft3gq0mv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3gq0mv
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting ALU Tests
+# Test 1 - Addition: Time: 10000 | A: 00000005, B: 00000003, OPCODE: 0000 | Result: 00000008, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 2 - Subtraction: Time: 20000 | A: 00000005, B: 00000003, OPCODE: 1000 | Result: 00000002, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 3 - Shift Left Logical: Time: 30000 | A: 00000005, B: 00000001, OPCODE: 0001 | Result: 0000000a, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 4 - Signed Compare: Time: 40000 | A: 00000005, B: 00000003, OPCODE: 0010 | Result: 00000001, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 5 - Unsigned Compare: Time: 50000 | A: 00000005, B: 00000003, OPCODE: 0011 | Result: 00000001, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 6 - XOR: Time: 60000 | A: 00000005, B: 00000003, OPCODE: 0100 | Result: 00000006, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 7 - Shift Right Logical: Time: 70000 | A: 00000005, B: 00000001, OPCODE: 0101 | Result: 00000002, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 8 - Shift Right Arithmetic: Time: 80000 | A: 80000005, B: 00000001, OPCODE: 1101 | Result: c0000002, N: 1, Z: 0, V: 0, C: 0, Error: 0
+# Test 9 - OR: Time: 90000 | A: 00000005, B: 00000003, OPCODE: 0110 | Result: 00000007, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 10 - AND: Time: 100000 | A: 00000005, B: 00000003, OPCODE: 0111 | Result: 00000001, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Test 11 - Invalid OPCODE: Time: 110000 | A: 00000005, B: 00000003, OPCODE: 1111 | Result: 00000000, N: 0, Z: 1, V: 0, C: 0, Error: 1
+# Test 12 - Large Numbers Addition: Time: 120000 | A: ffffffff, B: 00000001, OPCODE: 0000 | Result: 00000000, N: 0, Z: 1, V: 0, C: 1, Error: 0
+# Test 13 - Overflow Check Addition: Time: 130000 | A: 7fffffff, B: 00000001, OPCODE: 0000 | Result: 80000000, N: 1, Z: 0, V: 1, C: 0, Error: 0
+# Test 14 - Overflow Check Subtraction: Time: 140000 | A: 80000000, B: 00000001, OPCODE: 1000 | Result: 7fffffff, N: 0, Z: 0, V: 1, C: 0, Error: 0
+# Test 15 - Signed Compare (Negative): Time: 150000 | A: ffffffff, B: 00000001, OPCODE: 0010 | Result: 00000001, N: 0, Z: 0, V: 0, C: 0, Error: 0
+# Testbench Completed
+# ** Note: $finish    : D:/quartus_lab/lab4/lab4_g29_p3/tb_alu.sv(89)
+#    Time: 150 ns  Iteration: 0  Instance: /tb_alu
+# 1
+# Break in Module tb_alu at D:/quartus_lab/lab4/lab4_g29_p3/tb_alu.sv line 89
+# End time: 14:12:53 on May 16,2024, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 4

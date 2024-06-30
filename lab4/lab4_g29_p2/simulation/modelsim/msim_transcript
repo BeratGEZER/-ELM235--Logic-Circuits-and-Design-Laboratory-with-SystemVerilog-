@@ -1,0 +1,110 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab4_g29_p2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p2 {D:/quartus_lab/lab4/lab4_g29_p2/half_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:14 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p2" D:/quartus_lab/lab4/lab4_g29_p2/half_adder.sv 
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# End time: 13:50:14 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p2 {D:/quartus_lab/lab4/lab4_g29_p2/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:14 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p2" D:/quartus_lab/lab4/lab4_g29_p2/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 13:50:14 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p2 {D:/quartus_lab/lab4/lab4_g29_p2/module ripple_carry_adder_5bit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:14 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p2" D:/quartus_lab/lab4/lab4_g29_p2/module ripple_carry_adder_5bit.sv 
+# -- Compiling module ripple_carry_adder_5bit
+# 
+# Top level modules:
+# 	ripple_carry_adder_5bit
+# End time: 13:50:14 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p2 {D:/quartus_lab/lab4/lab4_g29_p2/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:14 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p2" D:/quartus_lab/lab4/lab4_g29_p2/main.sv 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 13:50:14 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p2 {D:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:14 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p2" D:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv 
+# -- Compiling module tb_adder
+# 
+# Top level modules:
+# 	tb_adder
+# End time: 13:50:15 on May 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_adder
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_adder 
+# Start time: 13:50:15 on May 16,2024
+# Loading sv_std.std
+# Loading work.tb_adder
+# Loading work.half_adder
+# Loading work.full_adder
+# Loading work.ripple_carry_adder_5bit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting Half-Adder Tests
+# Half-Adder | A=0, B=0 | Sum=0, Carry=0
+# Half-Adder | A=0, B=1 | Sum=1, Carry=0
+# Half-Adder | A=1, B=0 | Sum=1, Carry=0
+# Half-Adder | A=1, B=1 | Sum=0, Carry=1
+# Starting Full-Adder Tests
+# Full-Adder | A=0, B=0, Cin=0 | Sum=0, Cout=0
+# Full-Adder | A=0, B=1, Cin=0 | Sum=1, Cout=0
+# Full-Adder | A=1, B=0, Cin=0 | Sum=1, Cout=0
+# Full-Adder | A=1, B=1, Cin=0 | Sum=0, Cout=1
+# Full-Adder | A=0, B=0, Cin=1 | Sum=1, Cout=0
+# Full-Adder | A=0, B=1, Cin=1 | Sum=0, Cout=1
+# Full-Adder | A=1, B=0, Cin=1 | Sum=0, Cout=1
+# Full-Adder | A=1, B=1, Cin=1 | Sum=1, Cout=1
+# Starting 5-bit Ripple-Carry Adder Tests
+# 5-bit RCA | A=00000, B=00000, Cin=0 | Sum=00000, Cout=0
+# 5-bit RCA | A=00001, B=00001, Cin=0 | Sum=00010, Cout=0
+# 5-bit RCA | A=11111, B=11111, Cin=0 | Sum=11110, Cout=1
+# 5-bit RCA | A=10101, B=01010, Cin=0 | Sum=11111, Cout=0
+# 5-bit RCA | A=10101, B=01010, Cin=1 | Sum=00000, Cout=1
+# Testbench Completed
+# ** Note: $finish    : D:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv(110)
+#    Time: 170 ns  Iteration: 0  Instance: /tb_adder
+# 1
+# Break in Module tb_adder at D:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv line 110
+# Break key hit
+# Break key hit
+# Break key hit
+# End time: 13:52:26 on May 16,2024, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 0

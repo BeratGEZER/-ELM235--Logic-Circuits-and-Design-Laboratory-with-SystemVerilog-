@@ -1,0 +1,214 @@
+|main
+ha_A_tb => ha_A_tb.IN1
+ha_B_tb => ha_B_tb.IN1
+ha_Sum_tb << half_adder:ha.Sum
+ha_Carry_tb << half_adder:ha.Carry
+fa_A_tb => fa_A_tb.IN1
+fa_B_tb => fa_B_tb.IN1
+fa_Cin_tb => fa_Cin_tb.IN1
+fa_Sum_tb << full_adder:fa.Sum
+fa_Cout_tb << full_adder:fa.Cout
+rca_A_tb[0] => rca_A_tb[0].IN1
+rca_A_tb[1] => rca_A_tb[1].IN1
+rca_A_tb[2] => rca_A_tb[2].IN1
+rca_A_tb[3] => rca_A_tb[3].IN1
+rca_A_tb[4] => rca_A_tb[4].IN1
+rca_B_tb[0] => rca_B_tb[0].IN1
+rca_B_tb[1] => rca_B_tb[1].IN1
+rca_B_tb[2] => rca_B_tb[2].IN1
+rca_B_tb[3] => rca_B_tb[3].IN1
+rca_B_tb[4] => rca_B_tb[4].IN1
+rca_Cin_tb => rca_Cin_tb.IN1
+rca_Sum_tb[0] << ripple_carry_adder_5bit:rca.Sum
+rca_Sum_tb[1] << ripple_carry_adder_5bit:rca.Sum
+rca_Sum_tb[2] << ripple_carry_adder_5bit:rca.Sum
+rca_Sum_tb[3] << ripple_carry_adder_5bit:rca.Sum
+rca_Sum_tb[4] << ripple_carry_adder_5bit:rca.Sum
+rca_Cout_tb << ripple_carry_adder_5bit:rca.Cout
+
+
+|main|half_adder:ha
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|full_adder:fa
+A => A.IN1
+B => B.IN1
+Cin => Cin.IN1
+Sum <= half_adder:HA2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|full_adder:fa|half_adder:HA1
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|full_adder:fa|half_adder:HA2
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+Cin => Cin.IN1
+Sum[0] <= full_adder:FA0.Sum
+Sum[1] <= full_adder:FA1.Sum
+Sum[2] <= full_adder:FA2.Sum
+Sum[3] <= full_adder:FA3.Sum
+Sum[4] <= full_adder:FA4.Sum
+Cout <= full_adder:FA4.Cout
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA0
+A => A.IN1
+B => B.IN1
+Cin => Cin.IN1
+Sum <= half_adder:HA2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA0|half_adder:HA1
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA0|half_adder:HA2
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA1
+A => A.IN1
+B => B.IN1
+Cin => Cin.IN1
+Sum <= half_adder:HA2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA1|half_adder:HA1
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA1|half_adder:HA2
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA2
+A => A.IN1
+B => B.IN1
+Cin => Cin.IN1
+Sum <= half_adder:HA2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA2|half_adder:HA1
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA2|half_adder:HA2
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA3
+A => A.IN1
+B => B.IN1
+Cin => Cin.IN1
+Sum <= half_adder:HA2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA3|half_adder:HA1
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA3|half_adder:HA2
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA4
+A => A.IN1
+B => B.IN1
+Cin => Cin.IN1
+Sum <= half_adder:HA2.Sum
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA4|half_adder:HA1
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ripple_carry_adder_5bit:rca|full_adder:FA4|half_adder:HA2
+A => Sum.IN0
+A => Carry.IN0
+B => Sum.IN1
+B => Carry.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= Carry.DB_MAX_OUTPUT_PORT_TYPE
+
+

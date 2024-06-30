@@ -1,0 +1,98 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab4_g29_p1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p1 {D:/quartus_lab/lab4/lab4_g29_p1/lab4_g29_p1_pos_edge.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:41:02 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p1" D:/quartus_lab/lab4/lab4_g29_p1/lab4_g29_p1_pos_edge.sv 
+# -- Compiling module lab4_g29_p1_pos_edge
+# 
+# Top level modules:
+# 	lab4_g29_p1_pos_edge
+# End time: 13:41:02 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p1 {D:/quartus_lab/lab4/lab4_g29_p1/lab4_g29_p1_neg_edge.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:41:02 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p1" D:/quartus_lab/lab4/lab4_g29_p1/lab4_g29_p1_neg_edge.sv 
+# -- Compiling module lab4_g29_p1_neg_edge
+# 
+# Top level modules:
+# 	lab4_g29_p1_neg_edge
+# End time: 13:41:02 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p1 {D:/quartus_lab/lab4/lab4_g29_p1/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:41:02 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p1" D:/quartus_lab/lab4/lab4_g29_p1/main.sv 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 13:41:02 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p1 {D:/quartus_lab/lab4/lab4_g29_p1/lab4_g29_p1_latch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:41:02 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p1" D:/quartus_lab/lab4/lab4_g29_p1/lab4_g29_p1_latch.sv 
+# -- Compiling module lab4_g29_p1_latch
+# ** Warning: D:/quartus_lab/lab4/lab4_g29_p1/lab4_g29_p1_latch.sv(14): (vlog-2182) 'Qn_int' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	lab4_g29_p1_latch
+# End time: 13:41:03 on May 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p1 {D:/quartus_lab/lab4/lab4_g29_p1/tb_flipflops.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:41:03 on May 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab4/lab4_g29_p1" D:/quartus_lab/lab4/lab4_g29_p1/tb_flipflops.sv 
+# -- Compiling module tb_flipflops
+# 
+# Top level modules:
+# 	tb_flipflops
+# End time: 13:41:03 on May 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_flipflops
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_flipflops 
+# Start time: 13:41:03 on May 16,2024
+# Loading sv_std.std
+# Loading work.tb_flipflops
+# Loading work.main
+# Loading work.lab4_g29_p1_pos_edge
+# Loading work.lab4_g29_p1_neg_edge
+# Loading work.lab4_g29_p1_latch
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting Testbench
+# Time=22000 | S=1, R=1, D=1, clk=0 | pos_ff_out=1, neg_ff_out=1, latch_out=0, latch_outn=0
+# Time=44000 | S=0, R=0, D=0, clk=0 | pos_ff_out=0, neg_ff_out=0, latch_out=1, latch_outn=0
+# Time=66000 | S=1, R=1, D=1, clk=1 | pos_ff_out=1, neg_ff_out=1, latch_out=0, latch_outn=0
+# Time=88000 | S=0, R=0, D=0, clk=1 | pos_ff_out=0, neg_ff_out=0, latch_out=1, latch_outn=0
+# Time=110000 | S=1, R=1, D=1, clk=1 | pos_ff_out=1, neg_ff_out=1, latch_out=0, latch_outn=0
+# Time=132000 | S=0, R=0, D=0, clk=0 | pos_ff_out=0, neg_ff_out=0, latch_out=1, latch_outn=0
+# Time=154000 | S=1, R=1, D=1, clk=0 | pos_ff_out=1, neg_ff_out=1, latch_out=0, latch_outn=0
+# Time=176000 | S=0, R=0, D=0, clk=1 | pos_ff_out=0, neg_ff_out=0, latch_out=1, latch_outn=0
+# Testbench Completed
+# ** Note: $finish    : D:/quartus_lab/lab4/lab4_g29_p1/tb_flipflops.sv(50)
+#    Time: 176 ns  Iteration: 0  Instance: /tb_flipflops
+# 1
+# Break in Module tb_flipflops at D:/quartus_lab/lab4/lab4_g29_p1/tb_flipflops.sv line 50
+# End time: 13:42:55 on May 16,2024, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 0

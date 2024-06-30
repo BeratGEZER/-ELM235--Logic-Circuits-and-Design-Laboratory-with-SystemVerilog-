@@ -1,0 +1,27 @@
+|lab5_g29_p1
+clk => tick~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+reset => tick~reg0.ACLR
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+en => tick~reg0.ENA
+en => counter[4].ENA
+en => counter[3].ENA
+en => counter[2].ENA
+en => counter[1].ENA
+en => counter[0].ENA
+psc[0] => Equal0.IN4
+psc[1] => Equal0.IN3
+psc[2] => Equal0.IN2
+psc[3] => Equal0.IN1
+psc[4] => Equal0.IN0
+tick << tick~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

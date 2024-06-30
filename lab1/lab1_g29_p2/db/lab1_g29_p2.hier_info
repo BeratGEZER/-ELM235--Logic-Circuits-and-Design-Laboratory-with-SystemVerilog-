@@ -1,0 +1,15 @@
+|lab1_g29_p2
+G => y.IN0
+G => y.IN0
+G => y.IN0
+T => y.IN0
+T => y.IN1
+U => y.IN1
+U => y.IN1
+U => y.IN1
+E => y.IN1
+E => y.IN1
+E => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

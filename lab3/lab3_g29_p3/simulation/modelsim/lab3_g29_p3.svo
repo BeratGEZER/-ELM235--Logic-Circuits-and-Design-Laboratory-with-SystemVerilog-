@@ -1,0 +1,361 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+
+// DATE "05/02/2024 04:05:06"
+
+// 
+// Device: Altera 10M08DAF484C8G Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (SystemVerilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module lab3_g29_p3_nand_gate (
+	A,
+	B,
+	q0,
+	q1,
+	q2,
+	q3);
+input 	logic A ;
+input 	logic B ;
+output 	logic q0 ;
+output 	logic q1 ;
+output 	logic q2 ;
+output 	logic q3 ;
+
+// Design Ports Information
+// q0	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// q1	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// q2	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// q3	=>  Location: PIN_R4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// A	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// B	=>  Location: PIN_T2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire a_aQUARTUS_CREATED_GND_aI_combout;
+wire a_aQUARTUS_CREATED_UNVM_a_abusy;
+wire a_aQUARTUS_CREATED_ADC1_a_aeoc;
+wire q0_aoutput_o;
+wire q1_aoutput_o;
+wire q2_aoutput_o;
+wire q3_aoutput_o;
+wire B_ainput_o;
+wire A_ainput_o;
+wire q0_a0_combout;
+wire q1_a0_combout;
+wire q1_a1_combout;
+wire q1_a2_combout;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: LCCOMB_X11_Y16_N16
+fiftyfivenm_lcell_comb a_aQUARTUS_CREATED_GND_aI(
+// Equation(s):
+// a_aQUARTUS_CREATED_GND_aI_combout = GND
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(a_aQUARTUS_CREATED_GND_aI_combout),
+	.cout());
+// synopsys translate_off
+defparam a_aQUARTUS_CREATED_GND_aI.lut_mask = 16'h0000;
+defparam a_aQUARTUS_CREATED_GND_aI.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y5_N2
+fiftyfivenm_io_obuf q0_aoutput(
+	.i(q0_a0_combout),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(q0_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam q0_aoutput.bus_hold = "false";
+defparam q0_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y6_N16
+fiftyfivenm_io_obuf q1_aoutput(
+	.i(!q1_a0_combout),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(q1_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam q1_aoutput.bus_hold = "false";
+defparam q1_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y5_N16
+fiftyfivenm_io_obuf q2_aoutput(
+	.i(!q1_a1_combout),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(q2_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam q2_aoutput.bus_hold = "false";
+defparam q2_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y4_N16
+fiftyfivenm_io_obuf q3_aoutput(
+	.i(!q1_a2_combout),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(q3_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam q3_aoutput.bus_hold = "false";
+defparam q3_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y4_N8
+fiftyfivenm_io_ibuf B_ainput(
+	.i(B),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(B_ainput_o));
+// synopsys translate_off
+defparam B_ainput.bus_hold = "false";
+defparam B_ainput.listen_to_nsleep_signal = "false";
+defparam B_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y4_N22
+fiftyfivenm_io_ibuf A_ainput(
+	.i(A),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(A_ainput_o));
+// synopsys translate_off
+defparam A_ainput.bus_hold = "false";
+defparam A_ainput.listen_to_nsleep_signal = "false";
+defparam A_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y4_N0
+fiftyfivenm_lcell_comb q0_a0(
+// Equation(s):
+// q0_a0_combout = (B_ainput_o) # (A_ainput_o)
+
+	.dataa(B_ainput_o),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(A_ainput_o),
+	.cin(gnd),
+	.combout(q0_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam q0_a0.lut_mask = 16'hFFAA;
+defparam q0_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y4_N18
+fiftyfivenm_lcell_comb q1_a0(
+// Equation(s):
+// q1_a0_combout = (B_ainput_o & !A_ainput_o)
+
+	.dataa(B_ainput_o),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(A_ainput_o),
+	.cin(gnd),
+	.combout(q1_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam q1_a0.lut_mask = 16'h00AA;
+defparam q1_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y4_N20
+fiftyfivenm_lcell_comb q1_a1(
+// Equation(s):
+// q1_a1_combout = (!B_ainput_o & A_ainput_o)
+
+	.dataa(B_ainput_o),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(A_ainput_o),
+	.cin(gnd),
+	.combout(q1_a1_combout),
+	.cout());
+// synopsys translate_off
+defparam q1_a1.lut_mask = 16'h5500;
+defparam q1_a1.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y4_N22
+fiftyfivenm_lcell_comb q1_a2(
+// Equation(s):
+// q1_a2_combout = (B_ainput_o & A_ainput_o)
+
+	.dataa(B_ainput_o),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(A_ainput_o),
+	.cin(gnd),
+	.combout(q1_a2_combout),
+	.cout());
+// synopsys translate_off
+defparam q1_a2.lut_mask = 16'hAA00;
+defparam q1_a2.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: UNVM_X0_Y11_N40
+fiftyfivenm_unvm a_aQUARTUS_CREATED_UNVM_a(
+	.arclk(vcc),
+	.arshft(vcc),
+	.drclk(vcc),
+	.drshft(vcc),
+	.drdin(vcc),
+	.nprogram(vcc),
+	.nerase(vcc),
+	.nosc_ena(a_aQUARTUS_CREATED_GND_aI_combout),
+	.par_en(vcc),
+	.xe_ye(a_aQUARTUS_CREATED_GND_aI_combout),
+	.se(a_aQUARTUS_CREATED_GND_aI_combout),
+	.ardin(23'b11111111111111111111111),
+	.busy(a_aQUARTUS_CREATED_UNVM_a_abusy),
+	.osc(),
+	.bgpbusy(),
+	.sp_pass(),
+	.se_pass(),
+	.drdout());
+// synopsys translate_off
+defparam a_aQUARTUS_CREATED_UNVM_a.addr_range1_end_addr = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.addr_range1_offset = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.addr_range2_end_addr = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.addr_range2_offset = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.addr_range3_offset = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.is_compressed_image = "false";
+defparam a_aQUARTUS_CREATED_UNVM_a.is_dual_boot = "false";
+defparam a_aQUARTUS_CREATED_UNVM_a.is_eram_skip = "false";
+defparam a_aQUARTUS_CREATED_UNVM_a.max_ufm_valid_addr = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.max_valid_addr = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.min_ufm_valid_addr = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.min_valid_addr = -1;
+defparam a_aQUARTUS_CREATED_UNVM_a.part_name = "quartus_created_unvm";
+defparam a_aQUARTUS_CREATED_UNVM_a.reserve_block = "true";
+// synopsys translate_on
+
+// Location: ADCBLOCK_X10_Y24_N0
+fiftyfivenm_adcblock a_aQUARTUS_CREATED_ADC1_a(
+	.soc(a_aQUARTUS_CREATED_GND_aI_combout),
+	.usr_pwd(vcc),
+	.tsen(a_aQUARTUS_CREATED_GND_aI_combout),
+	.clkin_from_pll_c0(gnd),
+	.chsel({a_aQUARTUS_CREATED_GND_aI_combout,a_aQUARTUS_CREATED_GND_aI_combout,a_aQUARTUS_CREATED_GND_aI_combout,a_aQUARTUS_CREATED_GND_aI_combout,a_aQUARTUS_CREATED_GND_aI_combout}),
+	.eoc(a_aQUARTUS_CREATED_ADC1_a_aeoc),
+	.dout());
+// synopsys translate_off
+defparam a_aQUARTUS_CREATED_ADC1_a.analog_input_pin_mask = 0;
+defparam a_aQUARTUS_CREATED_ADC1_a.clkdiv = 1;
+defparam a_aQUARTUS_CREATED_ADC1_a.device_partname_fivechar_prefix = "none";
+defparam a_aQUARTUS_CREATED_ADC1_a.is_this_first_or_second_adc = 1;
+defparam a_aQUARTUS_CREATED_ADC1_a.prescalar = 0;
+defparam a_aQUARTUS_CREATED_ADC1_a.pwd = 1;
+defparam a_aQUARTUS_CREATED_ADC1_a.refsel = 0;
+defparam a_aQUARTUS_CREATED_ADC1_a.reserve_block = "true";
+defparam a_aQUARTUS_CREATED_ADC1_a.testbits = 66;
+defparam a_aQUARTUS_CREATED_ADC1_a.tsclkdiv = 1;
+defparam a_aQUARTUS_CREATED_ADC1_a.tsclksel = 0;
+// synopsys translate_on
+
+assign q0 = q0_aoutput_o;
+
+assign q1 = q1_aoutput_o;
+
+assign q2 = q2_aoutput_o;
+
+assign q3 = q3_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_TMS~	=>  Location: PIN_H2,	 I/O Standard: 2.5 V Schmitt Trigger,	 Current Strength: Default
+// ~ALTERA_TCK~	=>  Location: PIN_G2,	 I/O Standard: 2.5 V Schmitt Trigger,	 Current Strength: Default
+// ~ALTERA_TDI~	=>  Location: PIN_L4,	 I/O Standard: 2.5 V Schmitt Trigger,	 Current Strength: Default
+// ~ALTERA_TDO~	=>  Location: PIN_M5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_CONFIG_SEL~	=>  Location: PIN_H10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCONFIG~	=>  Location: PIN_H9,	 I/O Standard: 2.5 V Schmitt Trigger,	 Current Strength: Default
+// ~ALTERA_nSTATUS~	=>  Location: PIN_G9,	 I/O Standard: 2.5 V Schmitt Trigger,	 Current Strength: Default
+// ~ALTERA_CONF_DONE~	=>  Location: PIN_F8,	 I/O Standard: 2.5 V Schmitt Trigger,	 Current Strength: Default
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_TMS_a_apadout;
+wire a_aALTERA_TCK_a_apadout;
+wire a_aALTERA_TDI_a_apadout;
+wire a_aALTERA_CONFIG_SEL_a_apadout;
+wire a_aALTERA_nCONFIG_a_apadout;
+wire a_aALTERA_nSTATUS_a_apadout;
+wire a_aALTERA_CONF_DONE_a_apadout;
+wire a_aALTERA_TMS_a_aibuf_o;
+wire a_aALTERA_TCK_a_aibuf_o;
+wire a_aALTERA_TDI_a_aibuf_o;
+wire a_aALTERA_CONFIG_SEL_a_aibuf_o;
+wire a_aALTERA_nCONFIG_a_aibuf_o;
+wire a_aALTERA_nSTATUS_a_aibuf_o;
+wire a_aALTERA_CONF_DONE_a_aibuf_o;
+
+
+endmodule

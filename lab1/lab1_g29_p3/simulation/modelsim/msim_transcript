@@ -1,0 +1,54 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab1_g29_p3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab1_g29_p3 {D:/quartus_lab/lab1_g29_p3/lab1_g29_p3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:08 on Apr 18,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab1_g29_p3" D:/quartus_lab/lab1_g29_p3/lab1_g29_p3.sv 
+# -- Compiling module lab1_g29_p3
+# 
+# Top level modules:
+# 	lab1_g29_p3
+# End time: 14:54:08 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab1_g29_p3 {D:/quartus_lab/lab1_g29_p3/tb_lab1_g29_p3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:08 on Apr 18,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab1_g29_p3" D:/quartus_lab/lab1_g29_p3/tb_lab1_g29_p3.sv 
+# -- Compiling module tb_lab1_g29_p3
+# 
+# Top level modules:
+# 	tb_lab1_g29_p3
+# End time: 14:54:08 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_lab1_g29_p3
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_lab1_g29_p3 
+# Start time: 14:54:09 on Apr 18,2024
+# Loading sv_std.std
+# Loading work.tb_lab1_g29_p3
+# Loading work.lab1_g29_p3
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : D:/quartus_lab/lab1_g29_p3/tb_lab1_g29_p3.sv(42)
+#    Time: 180 ps  Iteration: 0  Instance: /tb_lab1_g29_p3
+# 1
+# Break in Module tb_lab1_g29_p3 at D:/quartus_lab/lab1_g29_p3/tb_lab1_g29_p3.sv line 42
+# End time: 14:56:57 on Apr 18,2024, Elapsed time: 0:02:48
+# Errors: 0, Warnings: 0

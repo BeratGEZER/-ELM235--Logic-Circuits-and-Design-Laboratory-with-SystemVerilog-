@@ -1,0 +1,141 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/quartus_lab/lab4/lab4_g29_p2/simulation/modelsim
+vfull_adder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1715856614
+!i10b 1
+!s100 ?Mi<oSc9@hcLZeW@90c6O1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IW6Eh`4XWcg`U=S>`=B7?P3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1715695581
+8D:/quartus_lab/lab4/lab4_g29_p2/full_adder.sv
+FD:/quartus_lab/lab4/lab4_g29_p2/full_adder.sv
+!i122 1
+L0 1 28
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1715856614.000000
+!s107 D:/quartus_lab/lab4/lab4_g29_p2/full_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab4/lab4_g29_p2|D:/quartus_lab/lab4/lab4_g29_p2/full_adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/quartus_lab/lab4/lab4_g29_p2
+Z9 tCvgOpt 0
+vhalf_adder
+R1
+R2
+!i10b 1
+!s100 oDLCAl^E=Cm7@1CXE6ez`0
+R3
+IYDg`@m=k18hCeI^MJI_F?1
+R4
+S1
+R0
+w1715695558
+8D:/quartus_lab/lab4/lab4_g29_p2/half_adder.sv
+FD:/quartus_lab/lab4/lab4_g29_p2/half_adder.sv
+!i122 0
+L0 1 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/quartus_lab/lab4/lab4_g29_p2/half_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab4/lab4_g29_p2|D:/quartus_lab/lab4/lab4_g29_p2/half_adder.sv|
+!i113 1
+R7
+R8
+R9
+vmain
+R1
+R2
+!i10b 1
+!s100 `hbJ]5<<DLlN3o6OVmz>j2
+R3
+ILEcP[NS:D1ijI=@JKHI<H3
+R4
+S1
+R0
+w1715714467
+8D:/quartus_lab/lab4/lab4_g29_p2/main.sv
+FD:/quartus_lab/lab4/lab4_g29_p2/main.sv
+!i122 3
+L0 3 45
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/quartus_lab/lab4/lab4_g29_p2/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab4/lab4_g29_p2|D:/quartus_lab/lab4/lab4_g29_p2/main.sv|
+!i113 1
+R7
+R8
+R9
+vripple_carry_adder_5bit
+R1
+R2
+!i10b 1
+!s100 4afXECnLUJfo4kz:@1bnV1
+R3
+IdLZN`WO@GNf<<6hFfPm>a2
+R4
+S1
+R0
+w1715718012
+8D:/quartus_lab/lab4/lab4_g29_p2/module ripple_carry_adder_5bit.sv
+FD:/quartus_lab/lab4/lab4_g29_p2/module ripple_carry_adder_5bit.sv
+!i122 2
+L0 1 54
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/quartus_lab/lab4/lab4_g29_p2/module ripple_carry_adder_5bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab4/lab4_g29_p2|D:/quartus_lab/lab4/lab4_g29_p2/module ripple_carry_adder_5bit.sv|
+!i113 1
+R7
+R8
+R9
+vtb_adder
+R1
+!s110 1715856615
+!i10b 1
+!s100 e1VGP[1g@ChJmE=Em7l9P3
+R3
+IeZz9JLPmlK4oo93URcmgB1
+R4
+S1
+R0
+w1715695765
+8D:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv
+FD:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv
+!i122 4
+L0 3 110
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/quartus_lab/lab4/lab4_g29_p2|D:/quartus_lab/lab4/lab4_g29_p2/tb_adder.sv|
+!i113 1
+R7
+R8
+R9

@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "and_out_tb",
+					"strict" : false
+				},
+				{
+					"name" : "or_out_tb",
+					"strict" : false
+				},
+				{
+					"name" : "nand_out_tb",
+					"strict" : false
+				},
+				{
+					"name" : "nor_out_tb",
+					"strict" : false
+				},
+				{
+					"name" : "a_tb",
+					"strict" : false
+				},
+				{
+					"name" : "b_tb",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

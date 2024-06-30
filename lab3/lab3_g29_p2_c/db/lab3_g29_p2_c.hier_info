@@ -1,0 +1,252 @@
+|lab3_g29_p2_mux_8x1
+in0[0] => in0[0].IN1
+in0[1] => in0[1].IN1
+in0[2] => in0[2].IN1
+in0[3] => in0[3].IN1
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in3[0] => in3[0].IN1
+in3[1] => in3[1].IN1
+in3[2] => in3[2].IN1
+in3[3] => in3[3].IN1
+in4[0] => in4[0].IN1
+in4[1] => in4[1].IN1
+in4[2] => in4[2].IN1
+in4[3] => in4[3].IN1
+in5[0] => in5[0].IN1
+in5[1] => in5[1].IN1
+in5[2] => in5[2].IN1
+in5[3] => in5[3].IN1
+in6[0] => in6[0].IN1
+in6[1] => in6[1].IN1
+in6[2] => in6[2].IN1
+in6[3] => in6[3].IN1
+in7[0] => in7[0].IN1
+in7[1] => in7[1].IN1
+in7[2] => in7[2].IN1
+in7[3] => in7[3].IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN2
+sel[2] => sel[2].IN1
+y[0] << lab3_g29_p1:mux3.y
+y[1] << lab3_g29_p1:mux3.y
+y[2] << lab3_g29_p1:mux3.y
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux1
+a[3] => a[3].IN1
+a[2] => a[2].IN1
+a[1] => a[1].IN1
+a[0] => a[0].IN1
+b[3] => b[3].IN1
+b[2] => b[2].IN1
+b[1] => b[1].IN1
+b[0] => b[0].IN1
+c[3] => c[3].IN1
+c[2] => c[2].IN1
+c[1] => c[1].IN1
+c[0] => c[0].IN1
+d[3] => d[3].IN1
+d[2] => d[2].IN1
+d[1] => d[1].IN1
+d[0] => d[0].IN1
+sel[1] => sel[1].IN1
+sel[0] => sel[0].IN2
+y[3] <= lab3_g29_p1:mux3.y
+y[2] <= lab3_g29_p1:mux3.y
+y[1] <= lab3_g29_p1:mux3.y
+y[0] <= lab3_g29_p1:mux3.y
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux1|lab3_g29_p1:mux1
+a[0] => a_sel_nand.IN0
+a[1] => a_sel_nand.IN0
+a[2] => a_sel_nand.IN0
+a[3] => a_sel_nand.IN0
+b[0] => b_sel_nand.IN0
+b[1] => b_sel_nand.IN0
+b[2] => b_sel_nand.IN0
+b[3] => b_sel_nand.IN0
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux1|lab3_g29_p1:mux2
+a[0] => a_sel_nand.IN0
+a[1] => a_sel_nand.IN0
+a[2] => a_sel_nand.IN0
+a[3] => a_sel_nand.IN0
+b[0] => b_sel_nand.IN0
+b[1] => b_sel_nand.IN0
+b[2] => b_sel_nand.IN0
+b[3] => b_sel_nand.IN0
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux1|lab3_g29_p1:mux3
+a[0] => a_sel_nand.IN0
+a[1] => a_sel_nand.IN0
+a[2] => a_sel_nand.IN0
+a[3] => a_sel_nand.IN0
+b[0] => b_sel_nand.IN0
+b[1] => b_sel_nand.IN0
+b[2] => b_sel_nand.IN0
+b[3] => b_sel_nand.IN0
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux2
+a[3] => a[3].IN1
+a[2] => a[2].IN1
+a[1] => a[1].IN1
+a[0] => a[0].IN1
+b[3] => b[3].IN1
+b[2] => b[2].IN1
+b[1] => b[1].IN1
+b[0] => b[0].IN1
+c[3] => c[3].IN1
+c[2] => c[2].IN1
+c[1] => c[1].IN1
+c[0] => c[0].IN1
+d[3] => d[3].IN1
+d[2] => d[2].IN1
+d[1] => d[1].IN1
+d[0] => d[0].IN1
+sel[1] => sel[1].IN1
+sel[0] => sel[0].IN2
+y[3] <= lab3_g29_p1:mux3.y
+y[2] <= lab3_g29_p1:mux3.y
+y[1] <= lab3_g29_p1:mux3.y
+y[0] <= lab3_g29_p1:mux3.y
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux2|lab3_g29_p1:mux1
+a[0] => a_sel_nand.IN0
+a[1] => a_sel_nand.IN0
+a[2] => a_sel_nand.IN0
+a[3] => a_sel_nand.IN0
+b[0] => b_sel_nand.IN0
+b[1] => b_sel_nand.IN0
+b[2] => b_sel_nand.IN0
+b[3] => b_sel_nand.IN0
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux2|lab3_g29_p1:mux2
+a[0] => a_sel_nand.IN0
+a[1] => a_sel_nand.IN0
+a[2] => a_sel_nand.IN0
+a[3] => a_sel_nand.IN0
+b[0] => b_sel_nand.IN0
+b[1] => b_sel_nand.IN0
+b[2] => b_sel_nand.IN0
+b[3] => b_sel_nand.IN0
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p2:mux2|lab3_g29_p1:mux3
+a[0] => a_sel_nand.IN0
+a[1] => a_sel_nand.IN0
+a[2] => a_sel_nand.IN0
+a[3] => a_sel_nand.IN0
+b[0] => b_sel_nand.IN0
+b[1] => b_sel_nand.IN0
+b[2] => b_sel_nand.IN0
+b[3] => b_sel_nand.IN0
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_g29_p2_mux_8x1|lab3_g29_p1:mux3
+a[0] => a_sel_nand.IN0
+a[1] => a_sel_nand.IN0
+a[2] => a_sel_nand.IN0
+a[3] => a_sel_nand.IN0
+b[0] => b_sel_nand.IN0
+b[1] => b_sel_nand.IN0
+b[2] => b_sel_nand.IN0
+b[3] => b_sel_nand.IN0
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => b_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+sel => a_sel_nand.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,12 @@
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_nand_gate.sv(2): object "A0" differs only in case from object "a0" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_nand_gate.sv Line: 2
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_nand_gate.sv(2): object "A1" differs only in case from object "a1" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_nand_gate.sv Line: 2
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_nand_gate.sv(2): object "A2" differs only in case from object "a2" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_nand_gate.sv Line: 2
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_nand_gate.sv(2): object "A3" differs only in case from object "a3" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_nand_gate.sv Line: 2
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_2.sv(3): object "A0" differs only in case from object "a0" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_2.sv Line: 3
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_2.sv(3): object "A1" differs only in case from object "a1" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_2.sv Line: 3
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_2.sv(3): object "A2" differs only in case from object "a2" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_2.sv Line: 3
+Info (10281): Verilog HDL Declaration information at lab3_g29_p4_2.sv(3): object "A3" differs only in case from object "a3" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/lab3_g29_p4_2.sv Line: 3
+Info (10281): Verilog HDL Declaration information at tb_lab3_g29_p4_2.sv(3): object "A0" differs only in case from object "a0" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/tb_lab3_g29_p4_2.sv Line: 3
+Info (10281): Verilog HDL Declaration information at tb_lab3_g29_p4_2.sv(3): object "A1" differs only in case from object "a1" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/tb_lab3_g29_p4_2.sv Line: 3
+Info (10281): Verilog HDL Declaration information at tb_lab3_g29_p4_2.sv(3): object "A2" differs only in case from object "a2" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/tb_lab3_g29_p4_2.sv Line: 3
+Info (10281): Verilog HDL Declaration information at tb_lab3_g29_p4_2.sv(3): object "A3" differs only in case from object "a3" in the same scope File: D:/quartus_lab/lab3/lab3_g29_p4/tb_lab3_g29_p4_2.sv Line: 3

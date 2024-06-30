@@ -1,0 +1,9 @@
+module example_circuit(
+    input logic G, T, U, E, 
+    output logic y
+);
+
+    // Çıktıyı tanımlayan lojik ifade
+    assign y = (T & E) | (G & T & U) | (~G & U & E) | (G & U & E);
+
+endmodule

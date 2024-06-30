@@ -1,0 +1,139 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab3_g29_p2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2 {D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:36:51 on May 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2" D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv 
+# -- Compiling module lab3_g29_p1
+# 
+# Top level modules:
+# 	lab3_g29_p1
+# End time: 03:36:51 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2 {D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:36:51 on May 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2" D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv 
+# -- Compiling module lab3_g29_p2_and_gate
+# 
+# Top level modules:
+# 	lab3_g29_p2_and_gate
+# End time: 03:36:51 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2 {D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_or_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:36:51 on May 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2" D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_or_gate.sv 
+# -- Compiling module lab3_g29_p2_or_gate
+# 
+# Top level modules:
+# 	lab3_g29_p2_or_gate
+# End time: 03:36:51 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2 {D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:36:51 on May 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2" D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv 
+# -- Compiling module lab3_g29_p2_nand_gate
+# 
+# Top level modules:
+# 	lab3_g29_p2_nand_gate
+# End time: 03:36:51 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2 {D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:36:51 on May 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2" D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv 
+# -- Compiling module lab3_g29_p2_nor_gate
+# 
+# Top level modules:
+# 	lab3_g29_p2_nor_gate
+# End time: 03:36:51 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2 {D:/quartus_lab/lab3/lab3_g29_p2/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:36:51 on May 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2" D:/quartus_lab/lab3/lab3_g29_p2/main.sv 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 03:36:51 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2 {D:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:36:51 on May 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2" D:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv 
+# -- Compiling module all_gates_testbench
+# 
+# Top level modules:
+# 	all_gates_testbench
+# End time: 03:36:52 on May 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  all_gates_testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" all_gates_testbench 
+# Start time: 03:36:52 on May 02,2024
+# Loading sv_std.std
+# Loading work.all_gates_testbench
+# Loading work.main
+# Loading work.lab3_g29_p2_and_gate
+# Loading work.lab3_g29_p1
+# Loading work.lab3_g29_p2_or_gate
+# Loading work.lab3_g29_p2_nand_gate
+# Loading work.lab3_g29_p2_nor_gate
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /all_gates_testbench/initial_main/and_mod/mux File: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'sel'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /all_gates_testbench/initial_main/and_mod/mux File: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_and_gate.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'sel'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /all_gates_testbench/initial_main/or_mod/mux File: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_or_gate.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /all_gates_testbench/initial_main/nand_mod/mux File: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'sel'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /all_gates_testbench/initial_main/nand_mod/mux File: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nand_gate.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'a'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /all_gates_testbench/initial_main/nor_mod/mux File: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'sel'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p1.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /all_gates_testbench/initial_main/nor_mod/mux File: D:/quartus_lab/lab3/lab3_g29_p2/lab3_g29_p2_nor_gate.sv Line: 7
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# AND: a_tb = 0, b_tb = 0, y_tb = 0
+# OR: a_tb = 0, b_tb = 0, y_tb = 0
+# NAND: a_tb = 0, b_tb = 0, y_tb = 1
+# NOR: a_tb = 0, b_tb = 0, y_tb = 1
+# AND: a_tb = 0, b_tb = 1, y_tb = 0
+# OR: a_tb = 0, b_tb = 1, y_tb = 1
+# NAND: a_tb = 0, b_tb = 1, y_tb = 1
+# NOR: a_tb = 0, b_tb = 1, y_tb = 0
+# AND: a_tb = 1, b_tb = 0, y_tb = 0
+# OR: a_tb = 1, b_tb = 0, y_tb = 1
+# NAND: a_tb = 1, b_tb = 0, y_tb = 1
+# NOR: a_tb = 1, b_tb = 0, y_tb = 0
+# AND: a_tb = 1, b_tb = 1, y_tb = 1
+# OR: a_tb = 1, b_tb = 1, y_tb = 1
+# NAND: a_tb = 1, b_tb = 1, y_tb = 0
+# NOR: a_tb = 1, b_tb = 1, y_tb = 0
+# ** Note: $finish    : D:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv(43)
+#    Time: 40 ns  Iteration: 0  Instance: /all_gates_testbench
+# 1
+# Break in Module all_gates_testbench at D:/quartus_lab/lab3/lab3_g29_p2/all_gates_testbench.sv line 43
+# End time: 03:37:01 on May 02,2024, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 7

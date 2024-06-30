@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tick",
+					"strict" : false
+				},
+				{
+					"name" : "psc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "psc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "psc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "psc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "psc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "en",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

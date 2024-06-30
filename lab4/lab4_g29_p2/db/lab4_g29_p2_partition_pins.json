@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ha_Sum_tb",
+					"strict" : false
+				},
+				{
+					"name" : "ha_Carry_tb",
+					"strict" : false
+				},
+				{
+					"name" : "fa_Sum_tb",
+					"strict" : false
+				},
+				{
+					"name" : "fa_Cout_tb",
+					"strict" : false
+				},
+				{
+					"name" : "rca_Sum_tb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_Sum_tb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_Sum_tb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_Sum_tb[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_Sum_tb[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_Cout_tb",
+					"strict" : false
+				},
+				{
+					"name" : "ha_A_tb",
+					"strict" : false
+				},
+				{
+					"name" : "ha_B_tb",
+					"strict" : false
+				},
+				{
+					"name" : "fa_A_tb",
+					"strict" : false
+				},
+				{
+					"name" : "fa_B_tb",
+					"strict" : false
+				},
+				{
+					"name" : "fa_Cin_tb",
+					"strict" : false
+				},
+				{
+					"name" : "rca_A_tb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_B_tb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_Cin_tb",
+					"strict" : false
+				},
+				{
+					"name" : "rca_B_tb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_A_tb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_A_tb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_B_tb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_A_tb[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_B_tb[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_A_tb[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rca_B_tb[4]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+`timescale 1ns/1ps
+
+module main (
+    input logic D_tb,
+    input logic clk_tb,
+    output logic pos_ff_out_tb,
+    output logic neg_ff_out_tb
+);
+
+    // Yükselen kenar tetiklemeli D-FlipFlop örneği
+    lab4_g29_p1_pos_edge pos_ff (
+        .D(D_tb),
+        .clk(clk_tb),
+        .Q(pos_ff_out_tb)
+    );
+
+    // Düşen kenar tetiklemeli D-FlipFlop örneği
+    lab4_g29_p1_neg_edge neg_ff (
+        .D(D_tb),
+        .clk(clk_tb),
+        .Q(neg_ff_out_tb)
+    );
+
+endmodule

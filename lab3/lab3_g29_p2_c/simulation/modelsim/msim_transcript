@@ -1,0 +1,98 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab3_g29_p2_c_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2_c {D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:35:11 on May 14,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2_c" D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p1.sv 
+# -- Compiling module lab3_g29_p1
+# 
+# Top level modules:
+# 	lab3_g29_p1
+# End time: 15:35:11 on May 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2_c {D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:35:11 on May 14,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2_c" D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2.sv 
+# -- Compiling module lab3_g29_p2
+# 
+# Top level modules:
+# 	lab3_g29_p2
+# End time: 15:35:11 on May 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2_c {D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_8x1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:35:11 on May 14,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2_c" D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_8x1.sv 
+# -- Compiling module lab3_g29_p2_mux_8x1
+# 
+# Top level modules:
+# 	lab3_g29_p2_mux_8x1
+# End time: 15:35:11 on May 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2_c {D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_16x1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:35:11 on May 14,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2_c" D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_16x1.sv 
+# -- Compiling module lab3_g29_p2_mux_16x1
+# 
+# Top level modules:
+# 	lab3_g29_p2_mux_16x1
+# End time: 15:35:11 on May 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/quartus_lab/lab3/lab3_g29_p2_c {D:/quartus_lab/lab3/lab3_g29_p2_c/tb_lab3_g29_p2_mux_16x1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:35:11 on May 14,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/quartus_lab/lab3/lab3_g29_p2_c" D:/quartus_lab/lab3/lab3_g29_p2_c/tb_lab3_g29_p2_mux_16x1.sv 
+# -- Compiling module tb_lab3_g29_p2_mux_16x1
+# 
+# Top level modules:
+# 	tb_lab3_g29_p2_mux_16x1
+# End time: 15:35:11 on May 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_lab3_g29_p2_mux_16x1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_lab3_g29_p2_mux_16x1 
+# Start time: 15:35:12 on May 14,2024
+# Loading sv_std.std
+# Loading work.tb_lab3_g29_p2_mux_16x1
+# Loading work.lab3_g29_p2_mux_16x1
+# Loading work.lab3_g29_p2_mux_8x1
+# Loading work.lab3_g29_p2
+# Loading work.lab3_g29_p1
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'y'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_8x1.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_lab3_g29_p2_mux_16x1/dut/mux1 File: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_16x1.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'y'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p1.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_lab3_g29_p2_mux_16x1/dut/mux1/mux3 File: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_8x1.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'y'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_8x1.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_lab3_g29_p2_mux_16x1/dut/mux2 File: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_16x1.sv Line: 39
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'y'. The port definition is at: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p1.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_lab3_g29_p2_mux_16x1/dut/mux2/mux3 File: D:/quartus_lab/lab3/lab3_g29_p2_c/lab3_g29_p2_mux_8x1.sv Line: 37
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time:                    0 | sel=0000, y=0000
+# Time:                10000 | sel=0001, y=0001
+# Time:                20000 | sel=0010, y=0010
+# ** Note: $finish    : D:/quartus_lab/lab3/lab3_g29_p2_c/tb_lab3_g29_p2_mux_16x1.sv(57)
+#    Time: 30 ns  Iteration: 0  Instance: /tb_lab3_g29_p2_mux_16x1
+# 1
+# Break in Module tb_lab3_g29_p2_mux_16x1 at D:/quartus_lab/lab3/lab3_g29_p2_c/tb_lab3_g29_p2_mux_16x1.sv line 57
+# End time: 15:35:54 on May 14,2024, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 4

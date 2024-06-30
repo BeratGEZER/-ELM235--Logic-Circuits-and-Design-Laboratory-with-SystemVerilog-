@@ -1,0 +1,15 @@
+|lab5_g30_p3
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+A => Selector2.IN2
+A => nextstate.s6.DATAB
+A => nextstate.s7.DATAB
+A => Selector3.IN1
+A => Selector0.IN1
+A => nextstate.s1.DATAB
+A => nextstate.s2.DATAB
+A => nextstate.s3.DATAB
+A => Selector1.IN1
+Y << Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
